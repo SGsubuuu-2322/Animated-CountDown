@@ -21,7 +21,7 @@ body {
 
 .counter.hide {
   transform: translate(-50%, -50%) scale(0);
-  animation: hide 0.3s ease-out;
+  animation: hide 0.4s ease-out;
 }
 
 @keyframes hide {
@@ -44,12 +44,12 @@ body {
 
 .final.show {
   transform: translate(-50%, -50%) scale(1);
-  animation: show 0.3s ease-out;
+  animation: show 0.4s ease-out;
 }
 
 @keyframes show {
   0% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0);
   }
 
   30% {
@@ -57,7 +57,7 @@ body {
   }
 
   100% {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
