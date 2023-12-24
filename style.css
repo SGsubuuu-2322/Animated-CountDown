@@ -59,3 +59,45 @@ body {
     transform: translate(-50%, -50%) scale(0);
   }
 }
+
+.nums {
+  color: crimson;
+  font-size: 50px;
+  position: relative;
+  width: 250px;
+  height: 65px;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+.nums span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+  transform-origin: bottom center;
+}
+
+.nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn 0.4s ease-in;
+}
+.nums span.out {
+  transform: translate(-50%, -50%);
+  animation: goOut 0.4s ease-in-out;
+}
+
+@keyframes goIn {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
