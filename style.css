@@ -83,7 +83,6 @@ body {
   animation: goIn 0.4s ease-in;
 }
 .nums span.out {
-  transform: translate(-50%, -50%);
   animation: goOut 0.4s ease-in-out;
 }
 
@@ -99,5 +98,16 @@ body {
   }
   100% {
     transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+@keyframes goOut {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-120deg);
   }
 }
