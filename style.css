@@ -39,6 +39,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
+  text-align: center;
 }
 
 .final.show {
@@ -60,6 +61,15 @@ body {
   }
 }
 
+#replay {
+  padding: 5px 25px;
+  border: none;
+  background-color: deeppink;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
 .nums {
   color: crimson;
   font-size: 50px;
@@ -67,7 +77,7 @@ body {
   width: 250px;
   height: 65px;
   overflow: hidden;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 h4 {
